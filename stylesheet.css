@@ -244,7 +244,7 @@ header{
     margin: 5px;
   }
 
-.slot-form-container input, select {
+.slot-form-container input, label, select{
     height: 20px;
     outline-style: none;
     padding: 3px;

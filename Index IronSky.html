@@ -101,29 +101,89 @@
         </div>
         </section>
 
-        <section id ="schedule" class='container'> <!--Quatrieme section-->
+        <!--Quatrieme section-->
+
+        <section id ="schedule" class='container'> 
+
             <h3>Schedule</h3>
+
+
+            <table class="schedule-table" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>   
+                <tbody>
+                    <!-- first row below-->
+                    <tr>
+                        <td>9:00 - 11:00</td>
+                        <td></td> <!-- Monday -->
+                        <td></td> <!-- Tuesday -->
+                        <td>X</td> <!-- Wednesday -->
+                        <td></td> <!-- Thursday -->
+                        <td>X</td> <!-- Friday -->
+                        <td>X</td> <!-- Sarturday -->
+                    </tr>
+                    <!-- second row below-->
+                    <tr>
+                        <td>12:00 - 14:00</td>
+                        <td></td> <!-- Monday -->
+                        <td></td> <!-- Tuesday -->
+                        <td></td> <!-- Wednesday -->
+                        <td></td> <!-- Thursday -->
+                        <td>X</td> <!-- Friday -->
+                        <td>X</td> <!-- Sarturday -->
+                    </tr>
+                    <!-- third row below-->
+                    <tr>
+                        <td>15:00 - 17:00</td>
+                        <td></td> <!-- Monday -->
+                        <td></td> <!-- Tuesday -->
+                        <td>X</td> <!-- Wednesday -->
+                        <td>X</td> <!-- Thursday -->
+                        <td>X</td> <!-- Friday -->
+                        <td>X</td> <!-- Sarturday -->
+        
+                        
+                    </tr>
+                </tbody>    
+            </table>
+
             <h3>Schedule a Time slot</h3>
+
             <form class="slot-form" action="/register" method="post">
                 <div class="slot-form-container">
                     <label>Email</label>
                     <input type="email" placeholder="Enter your email">
                 </div>
+
                 <div class="slot-form-container">
                     <label>Participants</label>
-                    <input type="number" placeholder="Number of Paticipants">
+                    <input type="number" placeholder="Number of Participants">
                 </div>
+
                 <div class="slot-form-container">
                     <label>Date</label>
                     <input type="date">
                 </div>
+
                 <div class="slot-form-container">
+
                     <label>Time</label>
                     <select>
                     <option value="early">9:00 - 11:00</option>
                     <option value="mid">12:00 - 14:00</option>
                     <option value="late">15:00 - 17:00</option>
                     </select>
+                    
+                </div>
+
                 <div class="slot-form-container">
                     <button type="submit">Reserve Your Slot!</button>
                 </div>
@@ -133,50 +193,7 @@
 <!-- Now add a table under the first <h3> tag, that contains the text “Schedule”. 
     Indeed, this table is going to contain the IronSkydive schedule for the week. The format of the table is the following -->
 
-    <table class="schedule-table" cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>   
-        <tbody>
-            <!-- first row below-->
-            <tr>
-                <td>9:00 - 11:00</td>
-                <td></td> <!-- Monday -->
-                <td></td> <!-- Tuesday -->
-                <td>X</td> <!-- Wednesday -->
-                <td></td> <!-- Thursday -->
-                <td>X</td> <!-- Friday -->
-                <td>X</td> <!-- Sarturday -->
-            </tr>
-            <!-- second row below-->
-            <tr>
-                <td>12:00 - 14:00</td>
-                <td></td> <!-- Monday -->
-                <td></td> <!-- Tuesday -->
-                <td></td> <!-- Wednesday -->
-                <td></td> <!-- Thursday -->
-                <td>X</td> <!-- Friday -->
-                <td>X</td> <!-- Sarturday -->
-            </tr>
-            <!-- third row below-->
-            <tr>
-                <td>15:00 - 17:00</td>
-                <td></td> <!-- Monday -->
-                <td></td> <!-- Tuesday -->
-                <td>X</td> <!-- Wednesday -->
-                <td>X</td> <!-- Thursday -->
-                <td>X</td> <!-- Friday -->
-                <td>X</td> <!-- Sarturday -->
-            </tr>
-        </tbody>    
-    </table>
+    
     </section>
 
 <footer class="dark-background footer">
